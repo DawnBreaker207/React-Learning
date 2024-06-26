@@ -1,4 +1,29 @@
 {
-  "products": [],
+  "products": [
+    {
+      "name": "Cronin 432423",
+      "id": 1
+    },
+    {
+      "name": "Hegmann",
+      "id": 2
+    },
+    {
+      "name": "Schumm",
+      "id": 3
+    },
+    {
+      "name": "Stefan",
+      "id": 4
+    },
+    {
+      "name": "Schimmel",
+      "id": 5
+    },
+    {
+      "name": "Hodkiewicz",
+      "id": 6
+    }
+  ],
   "users": []
 }
