@@ -2,27 +2,61 @@
   "products": [
     {
       "name": "Cronin 432423",
-      "id": 1
+      "id": 1,
+      "thumbnail": "https://picsum.photos/200/300",
+      "price": 4224242,
+      "category": "Internal Functionality Designer"
     },
     {
       "name": "Hegmann",
+      "thumbnail": "https://picsum.photos/200/300",
+      "price": "10000000000",
+      "category": "Global Markets Designer",
       "id": 2
     },
     {
       "name": "Schumm",
-      "id": 3
+      "id": 3,
+      "thumbnail": "https://picsum.photos/200/300",
+      "price": 4224242,
+      "category": "Global Applications Strategist"
     },
     {
       "name": "Stefan",
-      "id": 4
+      "id": 4,
+      "thumbnail": "https://picsum.photos/200/300",
+      "price": 4224242,
+      "category": "Human Assurance Administrator"
     },
     {
       "name": "Schimmel",
-      "id": 5
+      "id": 5,
+      "thumbnail": "https://picsum.photos/200/300",
+      "price": 4224242,
+      "category": "Corporate Marketing Assistant"
     },
     {
       "name": "Hodkiewicz",
-      "id": 6
+      "id": 6,
+      "thumbnail": "https://picsum.photos/200/300",
+      "price": 4224242,
+      "category": "Investor Operations Director"
+    },
+    {
+      "input": {
+        "name": "42432",
+        "category": "43242",
+        "price": "43242",
+        "thumbnail": "42342"
+      },
+      "id": 7
+    },
+    {
+      "name": "42432",
+      "category": "43242",
+      "price": "43242",
+      "thumbnail": "42342",
+      "id": 8
     }
   ],
   "users": []
