@@ -36,27 +36,11 @@
       "category": "Corporate Marketing Assistant"
     },
     {
-      "name": "Hodkiewicz",
       "id": 6,
-      "thumbnail": "https://picsum.photos/200/300",
-      "price": 4224242,
-      "category": "Investor Operations Director"
-    },
-    {
-      "input": {
-        "name": "42432",
-        "category": "43242",
-        "price": "43242",
-        "thumbnail": "42342"
-      },
-      "id": 7
-    },
-    {
-      "name": "42432",
-      "category": "43242",
-      "price": "43242",
-      "thumbnail": "42342",
-      "id": 8
+      "name": "lmao123",
+      "category": "lmaoqưe",
+      "price": "lmao",
+      "thumbnail": "lmao123"
     }
   ],
   "users": []
