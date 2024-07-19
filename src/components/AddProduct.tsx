@@ -1,15 +1,16 @@
 import { useForm } from "react-hook-form"
 import { Product } from "../interfaces/Product"
+import { useProduct } from "../contexts/ProductContext"
 
-type Props = {
-  onAdd: (dataInput: Product) => void
-}
 
-const AddProduct = ({ onAdd }: Props) => {
+const AddProduct = () => {
   const { register, handleSubmit } = useForm<Product>()
+  const { Add_Product } = useProduct()
 
   const onSubmit = (dataInput: Product) => {
-    onAdd(dataInput)
+    console.log(dataInput);
+
+    Add_Product(dataInput)
   }
   return (
     <form action="" onSubmit={handleSubmit(onSubmit)}>

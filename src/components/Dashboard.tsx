@@ -1,22 +1,16 @@
 import { Link } from "react-router-dom"
-import { Product } from "../interfaces/Product"
+import { useProduct } from "../contexts/ProductContext"
 
-type Props = {
-  products: Product[]
-  onDelete: (id: number) => void
-}
 
-const Dashboard = ({ products, onDelete }: Props) => {
-  const handleDelete = (id: number) => {
-    onDelete(id)
 
-  }
+const Dashboard = () => {
+  const { products, Delete_Product } = useProduct()
   // const handleEdit = (id: number) => {
   //   onEdit(id)
   // }
   return (
     <>
-      <Link to={'/add'}>Add</Link>
+      <Link to={'/admin/add'}>Add</Link>
       <table>
         <thead>
           <tr>
@@ -38,9 +32,9 @@ const Dashboard = ({ products, onDelete }: Props) => {
               <td>{index.price}</td>
               <td>{index.category}</td>
               <td>
-                <Link to={`edit/${index.id}`}>Edit</Link>
+                <Link to={`admin/edit/${index.id}`}>Edit</Link>
                 {/* <button onClick={() => handleEdit(index.id as number)}>Edit</button> */}
-                <button onClick={() => handleDelete(index.id as number)}>Delete</button>
+                <button onClick={() => Delete_Product(index.id as string)}>Delete</button>
               </td>
             </tr>
           ))}

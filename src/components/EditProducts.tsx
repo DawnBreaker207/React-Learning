@@ -2,15 +2,14 @@ import { useForm } from 'react-hook-form'
 import { Product } from '../interfaces/Product'
 import { useParams } from 'react-router-dom'
 import { useEffect } from 'react'
-import instance from '../services/config'
+import instance from '../configs/axios'
+import { useProduct } from '../contexts/ProductContext'
 
-type Props = {
-  onEdit: (dataInput: Product) => void
-}
 
-const EditProducts = ({ onEdit }: Props) => {
+
+const EditProducts = () => {
   const { id } = useParams()
-
+  const { Edit_Product } = useProduct()
   const { register, handleSubmit, reset } = useForm<Product>()
   useEffect(() => {
     (async () => {
@@ -20,7 +19,7 @@ const EditProducts = ({ onEdit }: Props) => {
   }, [])
 
   const handleUpdateData = (data: Product) => {
-    onEdit({ ...data, id })
+    Edit_Product(id as string, data)
 
     // onEdit(data)
   }

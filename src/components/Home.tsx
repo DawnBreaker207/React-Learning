@@ -1,24 +1,19 @@
-import { Product } from '../interfaces/Product'
+import { useProduct } from '../contexts/ProductContext'
+import ProductItem from './ProductItem'
 
-type Props = {
-  products: Product[]
-}
 
-const Home = ({ products }: Props) => {
+
+const Home = () => {
+  const { products } = useProduct()
   return (
     <>
       <div>Home</div>
-      {products.map((index) => (
-        <div key={index.id}>
-          <h1>{index.name}</h1>
-          <div>
-            <img src={index.thumbnail} alt={index.name} />
-          </div>
-          <p>{index.category}</p>
-          <p>{index.price}</p>
+      <div className='grid grid-cols-4 gap-x-6 gap-y-10'>
 
-        </div>
-      ))}
+        {products.map((index) => <ProductItem key={index.id} product={index} />
+
+        )}
+      </div>
     </>
 
   )
